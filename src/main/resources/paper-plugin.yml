@@ -1,0 +1,36 @@
+name: Nautica
+version: '${version}'
+main: it.gabrieledev.nautica.NauticaPlugin
+api-version: '1.21.8'
+description: Block built ships you steer from the helm and dock as real blocks.
+authors: [ImLele69]
+permissions:
+  nautica.use:
+    description: Sail ships
+    default: true
+  nautica.module.sails:
+    default: true
+  nautica.module.helm:
+    default: true
+  nautica.module.oars:
+    default: true
+  nautica.module.steam:
+    default: true
+  nautica.module.anchor:
+    default: true
+  nautica.module.compass:
+    default: true
+  nautica.module.heart:
+    default: true
+  nautica.bypass.claim:
+    description: Assemble and dock ignoring claims
+    default: op
+  nautica.bypass.size:
+    description: Ignore ship size limits
+    default: op
+  nautica.admin:
+    description: Admin commands, ship items, other people's helms
+    default: op
+  nautica.admin.prefab:
+    description: Spawn and save prefab ships
+    default: op

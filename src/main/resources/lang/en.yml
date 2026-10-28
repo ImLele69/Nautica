@@ -1,0 +1,193 @@
+prefix: "<dark_aqua>⚓</dark_aqua> "
+
+no-permission: "<prefix><red>You don't have permission."
+players-only: "<prefix><red>Only players can use this command."
+not-owner: "<prefix><red>You don't own this ship."
+no-ship-near: "<prefix><red>None of your ships is nearby."
+unknown-player: "<prefix><red>Unknown player: <player>"
+
+ship:
+  default-name: "<player>'s ship"
+
+state:
+  docked: "docked"
+  assembling: "departing"
+  sailing: "sailing"
+  docking: "docking"
+  virtual_port: "virtual port"
+
+helm:
+  orphan: "<prefix><red>This helm doesn't belong to any ship. Pick it up and place it again."
+  not-crew: "<prefix><red>You're not part of the crew of <ship>."
+  busy: "<prefix><red>The ship isn't available right now."
+  adopted: "<prefix><green>Helm assigned to a new ship: <ship>."
+
+assemble:
+  started: "<gray>Assembling <blocks> blocks..."
+  helm-not-on-ship: "<prefix><red>The helm has to be on the deck, on top of an allowed block."
+  claim: "<prefix><red>You can't take the block at <x> <y> <z>."
+  two-helms: "<prefix><red>This ship has two helms, remove the one at <x> <y> <z>."
+  too-many: "<prefix><red>The ship is over <max> blocks. Make sure it isn't touching the pier."
+  too-large: "<prefix><red>The ship is over the max size (<length> x <width> x <height>)."
+  unloaded: "<prefix><red>The ship reaches into an unloaded area (<x>, <z>)."
+  not-in-water: "<prefix><red>The ship isn't in water."
+  disk-error: "<prefix><red>Save error, the ship stays docked. Tell the staff."
+  changed: "<prefix><red>Something on the ship changed while departing. Try again."
+
+sail:
+  departed: "<prefix><green><ship> sets sail. <gray>W/S gear, A/D steer, sprint to straighten, jump for bell or anchor, sneak to dock."
+  anchor-is-down: "<yellow>The anchor is down, jump to raise it."
+  anchor-down: "<gray>Anchor down."
+  anchor-up: "<gray>Anchor up."
+  shoaling: "<yellow>Shallow water ahead!"
+  grounded: "<red>Run aground. Go astern to get free."
+  blocked: "<red>Obstacle!"
+  waypoint-reached: "<green>Waypoint reached."
+  no-fuel: "<yellow>The steam engine is out of coal."
+
+hud:
+  line: "<white><heading>° <aqua><compass></aqua> <gray>·</gray> <knots> kn <gray>·</gray> <gear>"
+  wind-bar: "Wind <dir> · <strength>%"
+
+gear:
+  "-1": "Astern"
+  "0": "Stop"
+  "1": "Half"
+  "2": "Full"
+  "3": "Flank"
+  anchor: "At anchor"
+
+wind:
+  running: "running"
+  broad: "broad reach"
+  beam: "beam reach"
+  close: "close hauled"
+  head: "head wind"
+
+dock:
+  done: "<prefix><green><ship> docked."
+  virtual-port: "<prefix><yellow><ship> found no free spot and went to the virtual port. Staff can place it back."
+  out-of-world: "<prefix><red>Can't dock, the ship would leave the world at <x> <y> <z>."
+  unloaded: "<prefix><red>Can't dock, unloaded area at <x> <y> <z>."
+  occupied: "<prefix><red>Can't dock, block in the way at <x> <y> <z>."
+  claim: "<prefix><red>Can't dock, protected area at <x> <y> <z>."
+
+fixture:
+  place-on-top: "<prefix><red>It has to go on the top face of a block."
+  occupied: "<prefix><red>That space isn't free."
+  no-build: "<prefix><red>You can't build here."
+  helm-placed: "<prefix><green>Helm placed, this is <ship>. The bow is in front of you."
+  helm-restored: "<prefix><green>Helm of <ship> put back in place."
+  helm-picked: "<prefix><gray>Helm picked up. Place it again to get the ship back."
+  pad-info: "<prefix><gray>Animals standing on this pad leave with the ship."
+  perch-info: "<prefix><gray>The closest parrot hops on when the ship departs."
+
+seat:
+  crew-only: "<prefix><red>This seat is for the crew only."
+  taken: "<prefix><red>Seat taken."
+
+shipyard:
+  title: "Shipyard · <ship>"
+  missing: "<prefix><red>You're missing <amount>x <item>."
+  installed: "<prefix><green><module> level <level> installed."
+  stats: |-
+    Blocks: <blocks>
+    Tonnage: <tonnage>
+    Sail area: <sail>
+    Sail/tonnage ratio: <ratio>
+    Draft: <draft>
+    Hold: <hold> containers
+    <updated>
+  stats-pending: "Stats get updated on the first departure"
+  stats-updated: "As of the last departure"
+  level: "Level: <level>/<max>"
+  maxed: "Maxed out"
+  next-level: "Next level:"
+  click: "Click to install"
+
+module:
+  sails: "Sails"
+  helm: "Helm"
+  oars: "Oars"
+  steam: "Steam engine"
+  anchor: "Anchor"
+  compass: "Navigation compass"
+  heart: "Heart of the sea"
+
+item:
+  helm-ship: "Ship: <ship>"
+  helm:
+    name: "Helm"
+    lore: "Place it on the deck with the bow in front of you"
+  seat:
+    name: "Ship seat"
+    lore: "A seat for passengers"
+  pad:
+    name: "Animal pad"
+    lore: "Animals standing on it travel with the ship"
+  perch:
+    name: "Parrot perch"
+    lore: "A nearby parrot hops on when the ship departs"
+
+compass:
+  N: "N"
+  NE: "NE"
+  E: "E"
+  SE: "SE"
+  S: "S"
+  SW: "SW"
+  W: "W"
+  NW: "NW"
+
+info: |-
+  <prefix><gold><ship></gold> <gray>(<id>)
+  <gray>Owner: <white><owner></white> · state: <white><state></white> · crew: <white><crew></white>
+  <gray>Blocks <white><blocks></white> · tonnage <white><tonnage></white> · sail <white><sail></white> · ratio <white><ratio></white>
+  <gray>Draft <white><draft></white> · hold <white><hold></white> · modules: <white><modules></white>
+
+crew:
+  added: "<prefix><green><player> is now part of the crew of <ship>."
+  removed: "<prefix><gray><player> is no longer part of the crew of <ship>."
+
+rename:
+  invalid: "<prefix><red>Invalid name (32 characters max)."
+  done: "<prefix><green>The ship is now called <ship>."
+
+transfer:
+  done: "<prefix><green><ship> now belongs to <player>."
+
+waypoint:
+  no-compass: "<prefix><red>You need the navigation compass (shipyard)."
+  cleared: "<prefix><gray>Autopilot off."
+  set: "<prefix><green>Waypoint set to <x>, <z>. While the ship is moving the helm follows it."
+
+give:
+  done: "<prefix><green>Gave <item> to <player>."
+
+admin:
+  list-header: "<prefix><gold><ships> ships</gold> <gray>· <sailing> sailing · <ms> ms/tick"
+  list-line: "<gray><id></gray> <white><ship></white> <gray><state> · <where> <extra>"
+  unknown-ship: "<prefix><red>Unknown ship (or ambiguous id)."
+  not-virtual: "<prefix><red>That ship isn't in the virtual port."
+  recover-failed: "<prefix><red>Recovery failed, check the console."
+  recovered: "<prefix><green><ship> placed back here."
+  no-blueprint: "<prefix><red>No snapshot for this ship."
+  not-sailing: "<prefix><red>That ship isn't sailing."
+  forcedocked: "<prefix><green><ship>: <state>."
+  reload-sailing: "<prefix><red>Some ships are still at sea, dock them before reloading."
+  reloaded: "<prefix><green>Config reloaded (<blocks> allowed blocks)."
+
+prefab:
+  line: "<gray>- <white><name></white>: <blocks> blocks, tonnage <tonnage>, sail/tonnage <ratio>"
+  broken: "<prefix><red>Prefab <name> is unreadable, check the console."
+  unknown: "<prefix><red>Unknown prefab: <name>"
+  bad-heading: "<prefix><red>Heading: north, south, east or west."
+  no-target: "<prefix><red>Look at the spot in the water where you want the ship."
+  not-water: "<prefix><red>That's not water. Add force to place it anyway."
+  ship-name: "Prefab <name>"
+  spawned: "<prefix><green><name> placed: <ship> (<id>), <blocks> blocks. The helm is yours."
+  try-force: "<gray>Add force to place it anyway."
+  failed: "<prefix><red>Spawn failed, check the console."
+  bad-name: "<prefix><red>Name: lowercase, digits, - and _, 32 max."
+  no-helm: "<prefix><red>Can't find that ship's helm."
+  saved: "<prefix><green>Prefab <name> saved (<blocks> blocks)."

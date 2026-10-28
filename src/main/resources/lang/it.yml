@@ -1,0 +1,193 @@
+prefix: "<dark_aqua>⚓</dark_aqua> "
+
+no-permission: "<prefix><red>Non hai il permesso."
+players-only: "<prefix><red>Solo un giocatore puo' usare questo comando."
+not-owner: "<prefix><red>Non sei il proprietario di questa nave."
+no-ship-near: "<prefix><red>Nessuna nave tua qui vicino."
+unknown-player: "<prefix><red>Giocatore sconosciuto: <player>"
+
+ship:
+  default-name: "Nave di <player>"
+
+state:
+  docked: "ormeggiata"
+  assembling: "in partenza"
+  sailing: "in viaggio"
+  docking: "in ormeggio"
+  virtual_port: "porto virtuale"
+
+helm:
+  orphan: "<prefix><red>Questo timone non appartiene a nessuna nave. Raccoglilo e piazzalo di nuovo."
+  not-crew: "<prefix><red>Non sei nell'equipaggio di <ship>."
+  busy: "<prefix><red>La nave non e' disponibile in questo momento."
+  adopted: "<prefix><green>Timone assegnato a una nuova nave: <ship>."
+
+assemble:
+  started: "<gray>Assemblaggio di <blocks> blocchi..."
+  helm-not-on-ship: "<prefix><red>Il timone deve stare sul ponte, sopra un blocco ammesso."
+  claim: "<prefix><red>Non puoi portare via il blocco a <x> <y> <z>."
+  two-helms: "<prefix><red>Questa nave ha due timoni: togli quello a <x> <y> <z>."
+  too-many: "<prefix><red>La nave supera i <max> blocchi. Controlla che non tocchi il molo."
+  too-large: "<prefix><red>La nave supera le dimensioni massime (<length> x <width> x <height>)."
+  unloaded: "<prefix><red>La nave arriva in una zona non caricata (<x>, <z>)."
+  not-in-water: "<prefix><red>La nave non e' in acqua."
+  disk-error: "<prefix><red>Errore di salvataggio: la nave resta ormeggiata. Avvisa lo staff."
+  changed: "<prefix><red>Qualcosa sulla nave e' cambiato durante la partenza. Riprova."
+
+sail:
+  departed: "<prefix><green><ship> salpa. <gray>W/S marcia, A/D timone, scatto allinea, salto campana o ancora, sneak ormeggia."
+  anchor-is-down: "<yellow>L'ancora e' calata: salta per salparla."
+  anchor-down: "<gray>Ancora calata."
+  anchor-up: "<gray>Ancora salpata."
+  shoaling: "<yellow>Fondale basso davanti!"
+  grounded: "<red>Incagliata. Vai indietro per liberarti."
+  blocked: "<red>Ostacolo!"
+  waypoint-reached: "<green>Rotta raggiunta."
+  no-fuel: "<yellow>Il motore a vapore e' senza carbone."
+
+hud:
+  line: "<white><heading>° <aqua><compass></aqua> <gray>·</gray> <knots> nodi <gray>·</gray> <gear>"
+  wind-bar: "Vento <dir> · <strength>%"
+
+gear:
+  "-1": "Indietro"
+  "0": "Ferma"
+  "1": "Mezza"
+  "2": "Piena"
+  "3": "Tutta forza"
+  anchor: "All'ancora"
+
+wind:
+  running: "in poppa"
+  broad: "al lasco"
+  beam: "al traverso"
+  close: "di bolina"
+  head: "in prua"
+
+dock:
+  done: "<prefix><green><ship> ormeggiata."
+  virtual-port: "<prefix><yellow><ship> non ha trovato un punto libero ed e' in porto virtuale. Lo staff puo' ripiazzarla."
+  out-of-world: "<prefix><red>Impossibile ormeggiare: la nave uscirebbe dal mondo a <x> <y> <z>."
+  unloaded: "<prefix><red>Impossibile ormeggiare: zona non caricata a <x> <y> <z>."
+  occupied: "<prefix><red>Impossibile ormeggiare: blocco occupato a <x> <y> <z>."
+  claim: "<prefix><red>Impossibile ormeggiare: zona protetta a <x> <y> <z>."
+
+fixture:
+  place-on-top: "<prefix><red>Va piazzato sulla faccia superiore di un blocco."
+  occupied: "<prefix><red>Lo spazio non e' libero."
+  no-build: "<prefix><red>Non puoi costruire qui."
+  helm-placed: "<prefix><green>Timone piazzato: questa e' <ship>. La prua e' davanti a te."
+  helm-restored: "<prefix><green>Timone di <ship> rimesso al suo posto."
+  helm-picked: "<prefix><gray>Timone raccolto. Piazzalo di nuovo per ritrovare la nave."
+  pad-info: "<prefix><gray>Gli animali sopra questo pad partono con la nave."
+  perch-info: "<prefix><gray>Il pappagallo piu' vicino ci sale alla partenza."
+
+seat:
+  crew-only: "<prefix><red>Questo posto e' riservato all'equipaggio."
+  taken: "<prefix><red>Posto occupato."
+
+shipyard:
+  title: "Cantiere · <ship>"
+  missing: "<prefix><red>Ti mancano <amount>x <item>."
+  installed: "<prefix><green><module> livello <level> installato."
+  stats: |-
+    Blocchi: <blocks>
+    Stazza: <tonnage>
+    Superficie velica: <sail>
+    Rapporto vela/stazza: <ratio>
+    Pescaggio: <draft>
+    Stiva: <hold> contenitori
+    <updated>
+  stats-pending: "Statistiche aggiornate alla prima partenza"
+  stats-updated: "Aggiornate all'ultima partenza"
+  level: "Livello: <level>/<max>"
+  maxed: "Al massimo"
+  next-level: "Prossimo livello:"
+  click: "Click per installare"
+
+module:
+  sails: "Vele"
+  helm: "Timone"
+  oars: "Remi"
+  steam: "Motore a vapore"
+  anchor: "Ancora"
+  compass: "Bussola di rotta"
+  heart: "Cuore del mare"
+
+item:
+  helm-ship: "Nave: <ship>"
+  helm:
+    name: "Timone"
+    lore: "Piazzalo sul ponte con la prua davanti a te"
+  seat:
+    name: "Sedile di bordo"
+    lore: "Un posto a sedere per i passeggeri"
+  pad:
+    name: "Pad per animali"
+    lore: "Gli animali sopra viaggiano con la nave"
+  perch:
+    name: "Trespolo per pappagalli"
+    lore: "Un pappagallo vicino ci sale in partenza"
+
+compass:
+  N: "N"
+  NE: "NE"
+  E: "E"
+  SE: "SE"
+  S: "S"
+  SW: "SO"
+  W: "O"
+  NW: "NO"
+
+info: |-
+  <prefix><gold><ship></gold> <gray>(<id>)
+  <gray>Proprietario: <white><owner></white> · stato: <white><state></white> · equipaggio: <white><crew></white>
+  <gray>Blocchi <white><blocks></white> · stazza <white><tonnage></white> · vela <white><sail></white> · rapporto <white><ratio></white>
+  <gray>Pescaggio <white><draft></white> · stiva <white><hold></white> · moduli: <white><modules></white>
+
+crew:
+  added: "<prefix><green><player> ora fa parte dell'equipaggio di <ship>."
+  removed: "<prefix><gray><player> non fa piu' parte dell'equipaggio di <ship>."
+
+rename:
+  invalid: "<prefix><red>Nome non valido (massimo 32 caratteri)."
+  done: "<prefix><green>La nave ora si chiama <ship>."
+
+transfer:
+  done: "<prefix><green><ship> ora appartiene a <player>."
+
+waypoint:
+  no-compass: "<prefix><red>Serve la bussola di rotta (cantiere)."
+  cleared: "<prefix><gray>Rotta automatica disattivata."
+  set: "<prefix><green>Rotta impostata verso <x>, <z>. Con la nave in marcia il timone la segue."
+
+give:
+  done: "<prefix><green><item> dato a <player>."
+
+admin:
+  list-header: "<prefix><gold><ships> navi</gold> <gray>· <sailing> in viaggio · <ms> ms/tick"
+  list-line: "<gray><id></gray> <white><ship></white> <gray><state> · <where> <extra>"
+  unknown-ship: "<prefix><red>Nave sconosciuta (o id ambiguo)."
+  not-virtual: "<prefix><red>Questa nave non e' in porto virtuale."
+  recover-failed: "<prefix><red>Ripristino fallito, vedi la console."
+  recovered: "<prefix><green><ship> ripiazzata qui."
+  no-blueprint: "<prefix><red>Snapshot mancante per questa nave."
+  not-sailing: "<prefix><red>Quella nave non e' in viaggio."
+  forcedocked: "<prefix><green><ship>: <state>."
+  reload-sailing: "<prefix><red>Ci sono navi in viaggio: falle ormeggiare prima del reload."
+  reloaded: "<prefix><green>Config ricaricata (<blocks> blocchi ammessi)."
+
+prefab:
+  line: "<gray>- <white><name></white>: <blocks> blocchi, stazza <tonnage>, vela/stazza <ratio>"
+  broken: "<prefix><red>La prefatta <name> e' illeggibile, vedi la console."
+  unknown: "<prefix><red>Prefatta sconosciuta: <name>"
+  bad-heading: "<prefix><red>Rotta: nord, sud, est o ovest."
+  no-target: "<prefix><red>Guarda il punto in acqua dove vuoi la nave."
+  not-water: "<prefix><red>Il punto che guardi non e' acqua. Aggiungi force per piazzarla comunque."
+  ship-name: "Prefatta <name>"
+  spawned: "<prefix><green><name> piazzata: <ship> (<id>), <blocks> blocchi. Il timone e' tuo."
+  try-force: "<gray>Aggiungi force per piazzarla comunque."
+  failed: "<prefix><red>Spawn fallito, vedi la console."
+  bad-name: "<prefix><red>Nome: minuscole, numeri, - e _, massimo 32."
+  no-helm: "<prefix><red>Il timone di quella nave non si trova."
+  saved: "<prefix><green>Prefatta <name> salvata (<blocks> blocchi)."
